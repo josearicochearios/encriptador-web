@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/entrada.css">
+    <link rel="stylesheet" href="./assets/css/salida.css">
+</head>
+
+<body>
+    <main class="principal-content">
+        <section class="intro-a-text">
+            <div class="logo-container">
+                <img class="logo-svg--desktop" src="./assets/img/Logo@2x.svg" alt="logo-amon-desktop">
+                <img class="logo-svg" src="./assets/img/Logovm.svg" alt="logo-mamon">
+            </div>
+            <div class="text-container">
+                <textarea id="autoresize" class="text-area--input text-area--text"
+                    placeholder="Ingrese el texto aquí ..." required></textarea>
+            </div>
+            <div class="buttons-container">
+                <div class="warning">
+                    <img src="./assets/img/exclamation-circle-fill.svg" alt="icono-exclamation">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="button--sec">
+                    <button id="encrypt" class="button button--encriptar">Encriptar</button>
+                    <button id="decrypt" class="button button--desencriptar">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+        <section class="output-a-text">
+            <div id="null-output" class="contenido-salida">
+                <img src="./assets/img/Muñeco.svg" alt="muñeco">
+                <div class="texto--vacio">
+                    <p class="title">Ningún mensaje fue encontrado</p>
+                    <p class="message">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+            <div id="contain-output" class="contenido-salida contenido-salida--lleno">
+                <div class="tarjetas-salida">
+                    <p id="text-output">p</p>
+                </div>
+                <button id="copy" class="button button--copiar">copiar</button>
+            </div>
+        </section>
+        <script src="assets/js/texto.js"></script>
+    </main>
+
+</body>
+
+</html>

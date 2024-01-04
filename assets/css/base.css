@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+    background-color: #F3F5FC;
+}
+
+.principal-content {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+@media only screen and (max-width: 820px) {
+    .principal-content {
+        flex-direction: column;
+        height: auto;
+    }
+}

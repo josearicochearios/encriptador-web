@@ -1,0 +1,109 @@
+.output-a-text {
+    background: #FFFFFF;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    margin: 40px 40px 40px 0;
+}
+
+.contenido-salida {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-salida--lleno {
+    justify-content: space-between;
+    width: 100%;
+    margin: 32px;
+}
+
+.tarjetas-salida {
+    height: 85%;
+    margin-bottom: 32px;
+    padding: 2px;
+}
+
+.button--copiar {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+
+
+.output-a-text img {
+    width: 75%;
+    height: auto;
+}
+
+
+.texto--vacio {
+    font-family: Inter;
+    text-align: center;
+    font-style: normal;
+    width: 80%;
+    margin-top: 32px;
+}
+
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+
+.message {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+#text-output {
+    color: #495057;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    word-wrap: break-word;
+}
+
+@media only screen and (max-width: 820px) {
+
+    .output-a-text {
+        margin: 64px 40px 40px 40px;
+        width: auto;
+        height: auto;
+        padding: 32px;
+    }
+
+    .output-a-text img {
+        display: none;
+    }
+
+    .texto--vacio {
+        margin-top: auto;
+    }
+
+    .message {
+        margin-top: 16px;
+    }
+
+    #text-output {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+    .output-a-text {
+        margin: 64px 24px 40px 24px;
+    }
+}
